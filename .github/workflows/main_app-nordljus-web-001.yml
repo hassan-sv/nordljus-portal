@@ -1,4 +1,4 @@
-name: Build and deploy HTML app to Azure Web App - app-nordljus-web-001
+name: Deploy Nordljus Web App to Azure
 
 on:
   push:
@@ -18,4 +18,4 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'app-nordljus-web-001'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_765D9820ACFF4EE18BE3D43B06DA710D }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
